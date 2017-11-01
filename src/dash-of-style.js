@@ -1,6 +1,11 @@
 console.log("You've added a dash of style!");
 const Urlify = require('urlify').create();
 
+// Generate TABLE OF CONTENTS
+//
+// Find element with id of "toc" and autogenerate
+// a Table of Contents there using h1 elements on the page.
+
 const tableOfContents = document.getElementById("toc");
 tableOfContents.classList.add("flex", "justify-center");
 const menuList = document.createElement('ul');
@@ -27,3 +32,48 @@ if (headings.length != 0) {
     address.classList.add("anon-pro", "no-underline", "rb-red", "b", "grow:hover");
   };
 }
+
+// Generate Code 'Example' sections
+//
+// Finds elements labelled with class="example" and
+// then inserts a code example for that element
+// which also includes it's own copy button.
+
+let examples = document.getElementsByClassName("example");
+
+if (examples.length != 0) {
+  for (let e = 0; e < examples.length; e++) {
+    let element = document.createElement('code');
+    const example = examples[e];
+    let codeExample = example;
+    // codeExample.classList.remove("example");
+    // if (codeExample.classList.length === 0) {
+    //   codeExample.removeAttribute("class")
+    // }
+    element.classList.add("prettyprint");
+    element.classList.add("db", "mt2", "mb4", 'pt3', "pa3", "bg-rb-grey30", "f7");
+    element.innerHTML = escapeHtml(codeExample.outerHTML);
+    element.classList.add("prettyprint");
+    example.insertAdjacentElement("afterend", element);
+
+    let copyButton = document.createElement('button');
+    copyButton.setAttribute("class", 'clipboard');
+    // copyButton.setAttribute("onclick", 'copy');
+    copyButton.classList.add('relative', 'left-28', 'db', 'top-2', 'bg-transparent', 'gray', 'bn', 'f7', 'anon-pro', 'rb-white-hover',
+      'rb-purple-focus', 'bg-rb-purple-hover');
+    copyButton.setAttribute("data-clipboard-text", example.outerHTML);
+    // copyButton.innerHTML = ImageTagSVG(clipboardSVG);
+    // function copy() {
+    let copy = 'copy';
+    let str = copyButton.innerHTML;
+    console.log(str);
+    var res = str.replace("Microsoft", "W3Schools");
+    copyButton.innerHTML = res;
+    // return copy;
+    // };
+    copyButton.innerHTML = copy;
+
+    example.insertAdjacentElement("afterend", copyButton);
+  }
+}
+
