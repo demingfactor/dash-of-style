@@ -1,4 +1,5 @@
 console.log("You've added a dash of style!");
+const EscapeHtml = require('escape-html');
 const Urlify = require('urlify').create();
 
 // Generate TABLE OF CONTENTS
@@ -52,7 +53,7 @@ if (examples.length != 0) {
     // }
     element.classList.add("prettyprint");
     element.classList.add("db", "mt2", "mb4", 'pt3', "pa3", "bg-rb-grey30", "f7");
-    element.innerHTML = escapeHtml(codeExample.outerHTML);
+    element.innerHTML = EscapeHtml(codeExample.outerHTML);
     element.classList.add("prettyprint");
     example.insertAdjacentElement("afterend", element);
 
@@ -66,7 +67,6 @@ if (examples.length != 0) {
     // function copy() {
     let copy = 'copy';
     let str = copyButton.innerHTML;
-    console.log(str);
     var res = str.replace("Microsoft", "W3Schools");
     copyButton.innerHTML = res;
     // return copy;
