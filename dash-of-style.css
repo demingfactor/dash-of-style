@@ -10,3 +10,23 @@
 .dash-of-style{
   display: flex;
 }
+
+code{
+  background-color: ghostwhite;
+  max-width: 45rem;
+}
+
+.clipboard{
+  top: 1.75rem;
+  left: 39rem;
+}
+
+.clipboard:hover{
+  background-color: lightgray;
+}
+
+.clipboard:active{
+  color: white;
+  background-color: black;
+}
+
