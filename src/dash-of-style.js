@@ -2,6 +2,9 @@ console.log("You've added a dash of style!");
 const EscapeHtml = require('escape-html');
 const Urlify = require('urlify').create();
 
+const Clipboard = require('clipboard');
+new Clipboard('.clipboard');
+
 // Generate TABLE OF CONTENTS
 //
 // Find element with id of "toc" and autogenerate
