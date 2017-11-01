@@ -61,20 +61,11 @@ if (examples.length != 0) {
     example.insertAdjacentElement("afterend", element);
 
     let copyButton = document.createElement('button');
+    copyButton.innerHTML = 'copy';
     copyButton.setAttribute("class", 'clipboard');
-    // copyButton.setAttribute("onclick", 'copy');
     copyButton.classList.add('relative', 'left-28', 'db', 'top-2', 'bg-transparent', 'gray', 'bn', 'f7', 'anon-pro', 'rb-white-hover',
       'rb-purple-focus', 'bg-rb-purple-hover');
     copyButton.setAttribute("data-clipboard-text", example.outerHTML);
-    // copyButton.innerHTML = ImageTagSVG(clipboardSVG);
-    // function copy() {
-    let copy = 'copy';
-    let str = copyButton.innerHTML;
-    var res = str.replace("Microsoft", "W3Schools");
-    copyButton.innerHTML = res;
-    // return copy;
-    // };
-    copyButton.innerHTML = copy;
 
     example.insertAdjacentElement("afterend", copyButton);
   }
