@@ -1,4 +1,12 @@
 #toc{
+  width: 20vw;
+  min-width: 15rem;
+}
+
+#toc>ul{
   position: fixed;
-  width: 15rem;
+}
+
+.dash-of-style{
+  display: flex;
 }
