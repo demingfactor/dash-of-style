@@ -2,8 +2,21 @@
   "name": "dash-of-style",
   "version": "0.1.0",
   "description": "Add a dash of style and turn a simple html page into a styleguide with example code.",
-  "main": "index.js",
+  "main": "dash-of-style.js",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "clean-webpack-plugin": "^0.1.17",
+    "clipboard": "^1.7.1",
+    "code-prettify": "^0.1.0",
+    "escape-html": "^1.0.3",
+    "urlify": "^0.3.6",
+    "webpack": "^3.5.5"
+  },
   "scripts": {
+    "start": "webpack-dev-server --open --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
