@@ -9,7 +9,7 @@
     "babel-preset-env": "^1.6.0",
     "clean-webpack-plugin": "^0.1.17",
     "clipboard": "^1.7.1",
-    "code-prettify": "^0.1.0",
+    "code-prettify": "github:google/code-prettify",
     "escape-html": "^1.0.3",
     "urlify": "^0.3.6",
     "webpack": "^3.5.5"
