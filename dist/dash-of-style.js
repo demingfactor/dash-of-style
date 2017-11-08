@@ -274,9 +274,7 @@ new Clipboard('.clipboard');
 
 const tableOfContents = document.getElementById("toc");
 if (tableOfContents != null && tableOfContents !== undefined) {
-  tableOfContents.classList.add("flex", "justify-center");
   const menuList = document.createElement('ul');
-  menuList.classList.add("m0");
   tableOfContents.insertAdjacentElement("beforeend", menuList);
   const headings = document.querySelectorAll("h1");
   if (headings.length != 0) {
@@ -289,14 +287,13 @@ if (tableOfContents != null && tableOfContents !== undefined) {
       heading.setAttribute("id", urlId);
 
       const menuItem = document.createElement('li');
-      menuItem.classList.add("list");
       menuList.insertAdjacentElement("beforeend", menuItem);
 
       const address = document.createElement('a');
       address.setAttribute("href", "#" + urlId);
       address.innerHTML = heading.innerText;
       menuItem.insertAdjacentElement("beforeend", address);
-      address.classList.add("anon-pro", "no-underline", "rb-red", "b", "grow:hover");
+      // address.classList.add("anon-pro", "no-underline", "rb-red", "b", "grow:hover");
     };
   }
 }
@@ -319,7 +316,7 @@ if (examples.length != 0) {
     //   codeExample.removeAttribute("class")
     // }
     element.classList.add("prettyprint");
-    element.classList.add("db", "mt2", "mb4", 'pt3', "pa3", "bg-rb-grey30", "f7");
+    // element.classList.add("db", "mt2", "mb4", 'pt3', "pa3", "bg-rb-grey30", "f7");
     element.innerHTML = EscapeHtml(codeExample.outerHTML);
     element.classList.add("prettyprint");
     example.insertAdjacentElement("afterend", element);
@@ -327,10 +324,11 @@ if (examples.length != 0) {
     let copyButton = document.createElement('button');
     copyButton.innerHTML = 'copy';
     copyButton.setAttribute("class", 'clipboard');
-    copyButton.classList.add('relative', 'left-28', 'db', 'top-2', 'bg-transparent', 'gray', 'bn', 'f7', 'anon-pro', 'rb-white-hover', 'rb-purple-focus', 'bg-rb-purple-hover');
+    // copyButton.classList.add('relative', 'left-28', 'db', 'top-2', 'bg-transparent', 'gray', 'bn', 'f7', 'anon-pro', 'rb-white-hover',
+    //   'rb-purple-focus', 'bg-rb-purple-hover');
     copyButton.setAttribute("data-clipboard-text", example.outerHTML);
 
-    example.insertAdjacentElement("afterend", copyButton);
+    element.insertAdjacentElement("afterbegin", copyButton);
   }
 }
 
@@ -2393,7 +2391,7 @@ var prettyPrint;
            IN_GLOBAL_SCOPE
              ? (win['prettyPrintOne'] = $prettyPrintOne)
              : (prettyPrintOne = $prettyPrintOne),
-        'prettyPrint': prettyPrint =
+        'prettyPrint':
            IN_GLOBAL_SCOPE
              ? (win['prettyPrint'] = $prettyPrint)
              : (prettyPrint = $prettyPrint)
