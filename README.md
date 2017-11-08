@@ -15,7 +15,7 @@ The best way to include the dash-of-style is via npm.
 
 3.    On your styleguide html page include the following:
 
-    <link rel="stylesheet" href="node_modules/dash-of-style/dash-of-style.css">
+    <link rel="stylesheet" href="node_modules/dash-of-style/scaffold.css">
     <script src="node_modules/dash-of-style/dist/dash-of-style.js" charset="utf-8"></script>
 
 Getting started
