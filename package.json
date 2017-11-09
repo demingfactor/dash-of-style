@@ -1,18 +1,13 @@
 {
   "name": "dash-of-style",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Add a dash of style and turn a simple html page into a styleguide with example code.",
   "main": "dash-of-style.js",
   "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
-    "clean-webpack-plugin": "^0.1.17",
     "clipboard": "^1.7.1",
     "code-prettify": "github:google/code-prettify",
     "escape-html": "^1.0.3",
-    "urlify": "^0.3.6",
-    "webpack": "^3.5.5"
+    "urlify": "^0.3.6"
   },
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.config.js",
@@ -27,7 +22,12 @@
   "author": "DemingFactor <online@demingfactor.com> (http://demingfactor.com)",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.7",
-    "style-loader": "^0.19.0"
+    "style-loader": "^0.19.0",
+    "webpack": "^3.5.5"
   }
 }
