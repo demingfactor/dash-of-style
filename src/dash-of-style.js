@@ -3,7 +3,6 @@ const EscapeHtml = require('escape-html');
 const Urlify = require('urlify').create();
 
 const Prettify = require('code-prettify');
-Prettify.prettyPrint();
 
 const Clipboard = require('clipboard');
 new Clipboard('.clipboard');
@@ -72,3 +71,5 @@ if (examples.length != 0) {
     element.insertAdjacentElement("afterbegin", copyButton);
   }
 }
+
+Prettify.prettyPrint();

@@ -262,7 +262,6 @@ const EscapeHtml = __webpack_require__(2);
 const Urlify = __webpack_require__(3).create();
 
 const Prettify = __webpack_require__(5);
-Prettify.prettyPrint();
 
 const Clipboard = __webpack_require__(7);
 new Clipboard('.clipboard');
@@ -331,6 +330,8 @@ if (examples.length != 0) {
     element.insertAdjacentElement("afterbegin", copyButton);
   }
 }
+
+Prettify.prettyPrint();
 
 /***/ }),
 /* 2 */
