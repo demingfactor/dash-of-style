@@ -1,11 +1,10 @@
-console.log("You've added a dash of style!");
+const Prettify = require('code-prettify');
 const EscapeHtml = require('escape-html');
 const Urlify = require('urlify').create();
-
-const Prettify = require('code-prettify');
-
 const Clipboard = require('clipboard');
 new Clipboard('.clipboard');
+
+console.log("You've added a dash of style!");
 
 // Generate TABLE OF CONTENTS
 //
