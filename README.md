@@ -5,6 +5,8 @@ Everyone can use a dash of style.
 
 Dash of Style provides a very simple way to create a style guide for your site or app. Also commonly known as a living styleguide as the style on the page reflects the actual code being used to style elements across the site.
 
+Check out [dash-of-style-example](//github.com/demingfactor/dash-of-style-example) for our example implementation out of the box.
+
 Installation
 ============
 
