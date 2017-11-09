@@ -10,9 +10,9 @@ Installation
 
 The best way to include the dash-of-style is via npm.
 
-1.    npm add dash-of-style # Add library to package.json
+1.    npm add dash-of-style  # Add library to package.json
 
-2.    npm install  # package now available in node_modules/dash-of-style
+2.    npm install --only=production  # Package now available in node_modules/dash-of-style
 
 3.    On your styleguide html page include our style scaffold to get you started.
 
@@ -30,3 +30,4 @@ Getting started
 3. Add dash-of-style code to your page.
 
 4. Check the web console and it should tell you "You've added a dash of style"
+
