@@ -1,3 +1,4 @@
+import '../node_modules/code-prettify/loader/prettify.css';
 const Prettify = require('code-prettify');
 const EscapeHtml = require('escape-html');
 const Urlify = require('urlify').create();
