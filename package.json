@@ -1,6 +1,6 @@
 {
   "name": "dash-of-style",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Add a dash of style and turn a simple html page into a styleguide with example code.",
   "main": "dist/dash-of-style.js",
   "dependencies": {
