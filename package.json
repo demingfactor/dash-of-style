@@ -2,7 +2,7 @@
   "name": "dash-of-style",
   "version": "1.0.0",
   "description": "Add a dash of style and turn a simple html page into a styleguide with example code.",
-  "main": "dash-of-style.js",
+  "main": "dist/dash-of-style.js",
   "dependencies": {
     "clipboard": "^1.7.1",
     "code-prettify": "github:google/code-prettify",
