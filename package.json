@@ -2,10 +2,11 @@
   "name": "dash-of-style",
   "version": "1.1.1",
   "description": "Add a dash of style and turn a simple html page into a styleguide with example code.",
+  "homepage": "https://github.com/demingfactor/dash-of-style",
+  "repository": "https://github.com/demingfactor/dash-of-style",
   "bugs": {
     "url": "https://github.com/ashleygwilliams/dash-of-style/issues"
   },
-  "homepage": "https://github.com/demingfactor/dash-of-style",
   "main": "dist/dash-of-style.js",
   "dependencies": {
     "clipboard": "^1.7.1",
