@@ -1,6 +1,6 @@
 import '../node_modules/code-prettify/loader/prettify.css';
+import {escape, unescape} from 'html-escaper';
 const Prettify = require('code-prettify');
-const EscapeHtml = require('escape-html');
 const Urlify = require('urlify').create();
 const Clipboard = require('clipboard');
 new Clipboard('.clipboard');
@@ -55,7 +55,7 @@ if (examples.length != 0) {
     //   codeExample.removeAttribute("class")
     // }
     element.classList.add("prettyprint");
-    element.innerHTML = EscapeHtml(codeExample.outerHTML);
+    element.innerHTML = escape(codeExample.outerHTML);
     element.classList.add("prettyprint");
     example.insertAdjacentElement("afterend", element);
 
