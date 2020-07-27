@@ -1,13 +1,14 @@
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
+  mode: 'production',
   entry: {
     app: './src/dash-of-style.js'
   },
   plugins: [
-    new CleanWebpackPlugin(['dist'])
+    new CleanWebpackPlugin()
   ],
   output: {
     filename: 'dash-of-style.js',
@@ -30,9 +31,3 @@ module.exports = {
     ]
   }
 };
-
-module: {
-  rules: [
-
-  ]
-}
