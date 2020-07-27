@@ -33,3 +33,15 @@ Getting started
 
 4. Check the web console and it should tell you "You've added a dash of style"
 
+Deploying package updates to NPM registry
+=========================================
+
+Major 1.0.0 -> 2.0.0
+Minor 1.1.0 -> 1.2.0
+Patch 1.0.1 -> 1.0.2
+
+1. Commit your changes to git
+
+2. npm version patch|minor|major  # select one  
+
+3. npm publish
