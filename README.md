@@ -42,6 +42,8 @@ Patch 1.0.1 -> 1.0.2
 
 1. Commit your changes to git
 
+2. npm build  # to create a new dist/dash-of-style.js
+
 2. npm version patch|minor|major  # select one  
 
 3. npm publish
